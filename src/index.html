@@ -8,14 +8,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/italo.png" alt="">
-            <p class="hero__text">O dia está chegando, falta pouco para eu receber seu presente, somente : 61d 8h 7m 10s</p>
+            <p class="hero__text">O dia está chegando, falta pouco para eu receber seu presente, somente : <span id="contador"></span></p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Hemisfério Neiva
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        15 Diamante no PXG
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Data</b>
+                        14/05/2025 às 19hres
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
+
+    <section class="event event__atractives" >
+            <div class="container" data-aos="fade-right">
+                <div class="event__details">
+                    <h2 class="event__details__title">Atrações</h2>
+                    <p class="event__details__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus et eos magni deleniti sit delectus voluptatibus cum fugit atque earum praesentium, vitae ullam eius? Nihil accusantium natus totam molestiae ipsum.</p>
+                </div>
+                <img class="event__image" src="./images/show.png" alt="show do aniversario">
+            </div>
+    </section>
+    <section class="event event__foods event__image__left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Comidas</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus et eos magni deleniti sit delectus voluptatibus cum fugit atque earum praesentium, vitae ullam eius? Nihil accusantium natus totam molestiae ipsum.</p>
+            </div>
+            <img class="event__image" src="./images/foods.png" alt="show do aniversario">
+        </div>
+</section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
